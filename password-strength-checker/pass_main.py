@@ -243,10 +243,9 @@ if len(weaknesses)>=1:
 else:
     print("The password doesn't has any weakness")
 
-print("\nStrength of the password:", strength)  # Printing the strength of the password.
-etropy_note=''  # Initializing an empty string for entropy note.
+print(f"\nStrength of the password: {strength}")  # Printing the strength of the password.
 
-print("\nEntropy of the password:", etropy)  # Printing the entropy of the password.
+print(f"\nEntropy of the password: {etropy}")  # Printing the entropy of the password.
 print(f"\nEstimated crack time: {crack_time} {time_unit}")  # Printing the estimated crack time.
 print(f"\nPossible combinations for password: {possible_combinations}")  # Printing the possible combinations.
 
@@ -256,5 +255,5 @@ for original_char, substituted_char in zip(password, new_password):
     if original_char != substituted_char and original_char not in seen:
         seen+=original_char
         print(f"{original_char} -> {substituted_char}", end=" / ")  # Printing the substitution.
-print("\n\nPassword after replacing with leet speak:", new_password)  # Printing the password after leet speak replacement.
+print(f"\n\nPassword after replacing with leet speak: {new_password}")  # Printing the password after leet speak replacement.
 print("\nNote: If your password after Substitutions contains common words or names, consider changing it for better security.\n")  # Printing a note for the user.
