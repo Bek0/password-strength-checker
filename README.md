@@ -1,23 +1,32 @@
-# Password Security Analyzer
+# Password Strength Checker And Analyzer
 
-## Description
-Password Security Analyzer is a Python tool designed to thoroughly analyze the security strength of passwords. It employs advanced techniques and algorithms to assess various aspects of password security, including complexity, entropy, vulnerabilities, and potential attack vectors.
+This Python project aims to provide a comprehensive tool for evaluating the strength and validity of passwords. It includes functionalities for calculating password entropy, estimating crack time, checking for common weaknesses, replacing characters with leet speak equivalents, validating passwords based on specified criteria, and checking if passwords have been exposed in data breaches.
 
 ## Features
-### 1. Password Strength Assessment
-- Evaluate the strength of passwords based on multiple factors, such as length, character diversity, unpredictability, and resistance to common attack methods.
 
-### 2. Entropy Calculation
-- Compute the entropy of passwords using mathematical formulas to measure the randomness and unpredictability of characters, providing a quantitative measure of security.
+- **Password Validation**: Ensures that passwords meet specified criteria, such as containing only English characters, numbers, and allowed symbols.
+- **Entropy Calculation**: Calculates the entropy of passwords to measure their randomness and complexity.
+- **Crack Time Estimation**: Estimates the time required to crack passwords based on their entropy and common crack speeds.
+- **Leet Speak Transformation**: Replaces characters in passwords with leet speak equivalents to enhance complexity.
+- **Weakness Detection**: Identifies potential weaknesses in passwords, such as low entropy, sequential characters, and repetition.
+- **Pwned Password Check**: Checks if passwords have been exposed in data breaches by querying the Have I Been Pwned database.
 
-### 3. Leet Speak Substitution
-- Apply Leet Speak substitutions to passwords, simulating common transformation techniques used by attackers to enhance the complexity analysis and identify vulnerabilities.
+## Project Structure
 
-### 4. Crack Time Estimation
-- Estimate the time required to crack passwords using various attack scenarios, including brute force attacks, dictionary attacks, hybrid attacks, and rainbow table attacks, considering factors such as password length, character set, and computational power.
+The project is organized into several Python modules, each responsible for a specific aspect of password analysis:
 
-### 5. Common Weakness Identification
-- Identify and classify common weaknesses in passwords, including repeated characters, sequential patterns, dictionary words, keyboard patterns, and lack of complexity, providing insights into potential vulnerabilities and attack vectors.
+- `pass_validation.py`: Contains functions for validating passwords based on specified criteria.
+- `pass_entropy.py`: Provides functions for calculating the entropy of passwords.
+- `pass_crack_time.py`: Estimates the time required to crack passwords based on their entropy and crack speed.
+- `pass_replace_with_leet.py`: Implements functionality to replace characters in passwords with leet speak equivalents.
+- `pass_score_and_weaknesses.py`: Calculates the overall score of passwords and identifies potential weaknesses.
+- `pwned.py`: Checks if passwords have been exposed in data breaches by querying the Have I Been Pwned API.
 
-### 6. Recommendations
-- Provide actionable recommendations and best practices for users to improve password security, including guidelines for creating strong and secure passwords, avoiding common pitfalls, and adopting password management solutions.
+## Usage
+
+To use the password strength checker, simply run the main file `main.py`. You will be prompted to enter a password, and the tool will provide detailed analysis including entropy, crack time estimation, weaknesses, and whether the password has been exposed in data breaches.
+
+## Installation
+
+To run the project, ensure you have Python 3 installed on your system. Clone the repository and install the required dependencies using pip:
+
