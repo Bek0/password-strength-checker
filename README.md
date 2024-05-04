@@ -15,11 +15,11 @@ This Python project aims to provide a comprehensive tool for evaluating the stre
 
 The project is organized into several Python modules, each responsible for a specific aspect of password analysis:
 
-- `pass_validation.py`: Contains functions for validating passwords based on specified criteria.
-- `pass_entropy.py`: Provides functions for calculating entropy, character amount, and possible combinations of passwords.
-- `pass_crack_time.py`: Estimates the time required to crack passwords based on their entropy and crack speed.
-- `pass_replace_with_leet.py`: Implements functionality to replace characters in passwords with leet speak equivalents.
-- `pass_score_and_weaknesses.py`: Calculates the overall score of passwords and identifies potential weaknesses.
+- validation.py`: Contains functions for validating passwords based on specified criteria.
+- entropy.py`: Provides functions for calculating entropy, character amount, and possible combinations of passwords.
+- `crack_time.py`: Estimates the time required to crack passwords based on their entropy and crack speed.
+- `replace_with_leet.py`: Implements functionality to replace characters in passwords with leet speak equivalents.
+- `score_and_weaknesses.py`: Calculates the overall score of passwords and identifies potential weaknesses.
 - `pwned.py`: Checks if passwords have been exposed in data breaches by querying the Have I Been Pwned API.
 
 ## Usage
